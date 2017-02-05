@@ -69,4 +69,7 @@ Add one file:
 git add FILENAME.TXT
 </pre>
 
-### Merging
+# Unknowns
+<pre>
+git congif --global push.default simple
+</pre>
