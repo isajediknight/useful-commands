@@ -72,4 +72,5 @@ git add FILENAME.TXT
 # Unknowns
 <pre>
 git congif --global push.default simple
+git remote add origin https://github.com/USERNAME/GIT_REPO.git
 </pre>
