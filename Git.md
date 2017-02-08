@@ -8,16 +8,24 @@
 ### Install Git
 <pre>sudo apt-get install git</pre>
 
-### Set Remote Repository
-<pre>
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-</pre>
-
 ### Folder Structure
 Go to or create the desired folder structure.  You Git repository will be created in whatever folder you init in.
 <pre>
 git init
+</pre>
+
+### Various Configs
+<pre>
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git remote add origin https://github.com/USERNAME/GIT_REPO.git
+git config credential.helper store
+git config --global credential.helper 'cache --timeout 7200'
+</pre>
+
+### Pull down current code
+<pre>
+git pull https://github.com/isajediknight/GIT_REPO.git BRANCH_NAME
 </pre>
 
 ### Setting Upstream
@@ -72,5 +80,4 @@ git add FILENAME.TXT
 # Unknowns
 <pre>
 git congif --global push.default simple
-git remote add origin https://github.com/USERNAME/GIT_REPO.git
 </pre>
