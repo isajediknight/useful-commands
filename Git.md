@@ -19,6 +19,11 @@ git init
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 git remote add origin https://github.com/USERNAME/GIT_REPO.git
+</pre>
+
+#### Optional
+<pre>
+git config --global credential.helper wincred
 git config credential.helper store
 git config --global credential.helper 'cache --timeout 7200'
 </pre>
@@ -27,14 +32,27 @@ git config --global credential.helper 'cache --timeout 7200'
 <pre>
 git pull https://github.com/isajediknight/GIT_REPO.git BRANCH_NAME
 </pre>
+Or sometimes this is needed to reset what you have
+<pre>
+git reset --hard SHORT_HASH_FOR_COMMIT
+</pre>
+
+### Setting Origin
+<pre>
+git remote add origin https://github.com/USERNAME/GIT_REPO.git
+</pre>
 
 ### Setting Upstream
 <pre>
 git push --set-upstream https://github.com/USERNAME/GIT_REPO.git master
 </pre>
 
-### Branching
+### Setup Branch Tracking
+<pre>
+git branch --set-upstream-to=ABOVE_BRANCH BELOW_BRANCH
+</pre>
 
+### Branching
 1. Create New Branch
 <pre>
 git checkout -b NEW_BRANCH
@@ -50,13 +68,13 @@ git commit -m "brief description of the change"
 </pre>
 1. Commit your changes
 <pre>
-git push origin master
+git push origin CURRENT_BRANCH
 </pre>
 1. _Alternatively checkout another branch and merge your code in_
 <pre>
 git checkout BRANCH_ABOVE
 git merge BRANCH_BELOW
-git push origin master
+git push origin CURRENT_BRANCH
 </pre>
 1. _Alternatively delete branch if it is no longer needed_
 <pre>
