@@ -51,6 +51,10 @@ git push --set-upstream https://github.com/USERNAME/GIT_REPO.git master
 <pre>
 git branch --set-upstream-to=ABOVE_BRANCH BELOW_BRANCH
 </pre>
+#### Optional - Setup Remote Remote Branch Tracking
+<pre>
+git branch --set-upstream-to=origin/ABOVE_BRANCH BELOW_BRANCH
+</pre>
 
 ### Branching
 1. Create New Branch
@@ -83,6 +87,12 @@ git branch -D BRANCH_BELOW
 </pre>
 
 #### Placeholder
+
+### Reset
+Only do this if you are okay with losing changes
+<pre>
+git reset --hard 6digits
+</pre>
 
 ### Commiting
 Add all files:
