@@ -88,12 +88,6 @@ git branch -D BRANCH_BELOW
 
 #### Placeholder
 
-### Reset
-Only do this if you are okay with losing changes
-<pre>
-git reset --hard 6digits
-</pre>
-
 ### Commiting
 Add all files:
 <pre>
