@@ -56,6 +56,11 @@ git branch --set-upstream-to=ABOVE_BRANCH BELOW_BRANCH
 git branch --set-upstream-to=origin/ABOVE_BRANCH BELOW_BRANCH
 </pre>
 
+### Pull down other remote branches
+<pre>
+git fetch origin
+</pre>
+
 ### Branching
 1. Create New Branch
 <pre>
