@@ -16,11 +16,11 @@ https://help.ubuntu.com/community/Smartmontools
  https://askubuntu.com/questions/906636/ethernet-adapter-was-disable-on-ubuntu-17-04
  https://askubuntu.com/questions/838865/network-manager-refusing-to-manage-wired-interfaces
 - To get it working edit the interfaces file located at: /etc/network to:
-
 <pre>auto WLAN-IDENTIFIER
 iface WLAN-IDENTIFIER inet dhcp
 wpa-ssid SSID
 wpa-psk PASSWORD</pre>
-
+- Next run:
+<pre>sudo ifup -v wlan0</pre>
 ## Speed Test
 <pre>curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -</pre>
