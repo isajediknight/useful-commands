@@ -17,10 +17,10 @@ https://help.ubuntu.com/community/Smartmontools
  https://askubuntu.com/questions/838865/network-manager-refusing-to-manage-wired-interfaces
 - To get it working edit the interfaces file located at: /etc/network to:
 
-<pre>auto WLAN-IDENTIFIER</pre>
-<pre>iface WLAN-IDENTIFIER inet dhcp</pre>
-<pre>wpa-ssid SSID</pre>
-<pre>wpa-psk PASSWORD</pre>
+<pre>auto WLAN-IDENTIFIER
+iface WLAN-IDENTIFIER inet dhcp
+wpa-ssid SSID
+wpa-psk PASSWORD</pre>
 
 ## Speed Test
 <pre>curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -</pre>
