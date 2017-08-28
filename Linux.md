@@ -15,3 +15,12 @@ https://help.ubuntu.com/community/Smartmontools
  https://www.centos.org/forums/viewtopic.php?t=25341
  https://askubuntu.com/questions/906636/ethernet-adapter-was-disable-on-ubuntu-17-04
  https://askubuntu.com/questions/838865/network-manager-refusing-to-manage-wired-interfaces
+- To get it working edit the interfaces file located at: /etc/network to:
+
+auto <WLAN-IDENTIFIER>
+iface <WLAN-IDENTIFIER> inet dhcp
+wpa-ssid <SSID>
+wpa-psk <PASSWORD>
+
+## Speed Test
+<pre>curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -</pre>
