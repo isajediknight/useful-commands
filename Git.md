@@ -1,7 +1,7 @@
 # Configuration and Setup
 
 ## Windows
-[Probably easiest to use Github Desktop GUI](https://desktop.github.com/ "Download Github Desktop")
+[Git Bash](https://git-scm.com/downloads "Git Bash")
 
 ## Linux
 
